@@ -4,6 +4,7 @@ import 'dart:math';
 
 void main() => runApp(
       MaterialApp(
+        debugShowCheckedModeBanner: false,
         home: BallPage(),
       ),
     );
@@ -37,7 +38,6 @@ class Ball extends StatefulWidget {
 
 class _BallState extends State<Ball> {
   int ballNumber = 1;
-
   @override
   Widget build(BuildContext context) {
     return Container(
